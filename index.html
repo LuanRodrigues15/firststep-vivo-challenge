@@ -14,6 +14,23 @@
 
   <body>
     <div id="root"></div>
+    <script type="text/javascript">
+      // Restore redirect from 404.html
+      (function() {
+        var redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          // Remove the base path and restore the actual route
+          var base = '/firststep-vivo-challenge/';
+          if (redirect.startsWith(base)) {
+            redirect = redirect.slice(base.length - 1);
+          }
+          if (redirect !== window.location.pathname + window.location.search + window.location.hash) {
+            window.history.replaceState(null, null, redirect);
+          }
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

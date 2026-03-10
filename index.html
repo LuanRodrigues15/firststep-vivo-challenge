@@ -16,6 +16,14 @@
 
   <body>
     <div id="root"></div>
+    
+    <script>
+      // Redirect to home if no hash is present (for GitHub Pages)
+      if (!window.location.hash) {
+        window.location.hash = '#/';
+      }
+    </script>
+    
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

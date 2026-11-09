@@ -1,4 +1,5 @@
 # 🚀 FirstStep - Plataforma de Onboarding Vivo
+**Versão de portfolio** do projeto vencedor do desafio proposto pela Vivo durante o evento NEXT 2025, da FIAP.
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
